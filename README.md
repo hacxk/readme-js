@@ -1241,3 +1241,67 @@ In this example, the inner function has access to the `name` and `forcePower` va
          energy -= 10;
          console.log(`Swinging ${color} lightsaber. Energy: ${energy}`);
        },
+       getEnergy: function() {
+         return energy;
+       },
+       recharge: function(amount) {
+         energy += amount;
+         console.log(`Recharged ${color} lightsaber. Energy: ${energy}`);
+       }
+     };
+   }
+
+   let myLightsaber = createLightsaber("blue");
+   myLightsaber.swing(); // Output: Swinging blue lightsaber. Energy: 90
+   myLightsaber.recharge(20); // Output: Recharged blue lightsaber. Energy: 110
+   console.log(myLightsaber.getEnergy()); // Output: 110
+   ```
+
+   In this example, the `energy` variable is kept private and can only be modified by the methods provided in the returned object. This demonstrates how closures can be used to create private data and encapsulate functionality.
+
+2. **Function Factories**:
+   ```javascript
+   function createMultiplier(factor) {
+     return function(number) {
+       return number * factor;
+     };
+   }
+
+   let double = createMultiplier(2);
+   let triple = createMultiplier(3);
+
+   console.log(double(5)); // Output: 10
+   console.log(triple(5)); // Output: 15
+   ```
+
+   Here, `createMultiplier` is a function factory that generates functions to multiply a number by a given factor. Each generated function maintains its own `factor`, demonstrating how closures can be used to create specialized functions.
+
+3. **Maintaining State**:
+   ```javascript
+   function createCounter() {
+     let count = 0;
+     
+     return {
+       increment: function() {
+         count++;
+         console.log(`Count: ${count}`);
+       },
+       decrement: function() {
+         count--;
+         console.log(`Count: ${count}`);
+       },
+       getCount: function() {
+         return count;
+       }
+     };
+   }
+
+   let counter = createCounter();
+   counter.increment(); // Output: Count: 1
+   counter.increment(); // Output: Count: 2
+   console.log(counter.getCount()); // Output: 2
+   counter.decrement(); // Output: Count: 1
+   ```
+
+   This example illustrates how closures can be used to maintain and manipulate state within an object. Each instance of the `counter` maintains its own `count` variable.
+
