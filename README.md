@@ -140,15 +140,9 @@ Let's begin our training! 🚀
    - [Testing: Ensuring Reliability](#testing-ensuring-reliability) ✅
    - [Performance Optimization](#performance-optimization) 🚀
 
-10. [**Node.js: Beyond the Browser**](#nodejs-beyond-the-browser) 🌍
-    - [Basics of Node.js](#basics-of-nodejs) 🧩
-      - [File System (Reading and Writing)](#file-system-reading-and-writing) 📁
-      - [Networking (HTTP Servers)](#networking-http-servers) 🌐
-      - [Using NPM](#using-npm) 📦
-    - [Advanced Node.js Concepts](#advanced-nodejs-concepts) 🔍
-      - [Advanced File System Operations](#advanced-file-system-operations) 🔧
-      - [Advanced Networking](#advanced-networking) 🌉
-      - [Advanced NPM Features](#advanced-npm-features) 🚀
+10. **Node.js (Beyond the Browser)**
+    -   Basics: Files, Networking, NPM
+    -   Advanced: Streams, HTTPS, More NPM
 
 
 ## Setting Up Your JavaScript Environment 🛠️
