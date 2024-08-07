@@ -140,7 +140,7 @@ Let's begin our training! 🚀
    - [Testing: Ensuring Reliability](#testing-ensuring-reliability) ✅
    - [Performance Optimization](#performance-optimization) 🚀
 
-10. **Node.js (Beyond the Browser)**
+10. [**Node.js (Beyond the Browser)**](#Node.js:-Beyond-the-Browser)
     -   Basics: Files, Networking, NPM
     -   Advanced: Streams, HTTPS, More NPM
 
